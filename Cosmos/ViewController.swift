@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        Alamofire.request("https://api.nasa.gov/planetary/apod?api_key=NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo").responseJSON { (response) in
+            print(response)
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
 

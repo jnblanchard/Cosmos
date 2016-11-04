@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B565AB101324501302121FF /* Pods_Cosmos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146EB6932DE4922C6857BF30 /* Pods_Cosmos.framework */; };
 		AC5555521DCD1BDC007893B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5555511DCD1BDC007893B1 /* AppDelegate.swift */; };
 		AC5555541DCD1BDC007893B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5555531DCD1BDC007893B1 /* ViewController.swift */; };
 		AC5555571DCD1BDC007893B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5555551DCD1BDC007893B1 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		146EB6932DE4922C6857BF30 /* Pods_Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8832BD52E2C2266BDF1250 /* Pods-Cosmos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cosmos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cosmos/Pods-Cosmos.release.xcconfig"; sourceTree = "<group>"; };
 		AC55554E1DCD1BDC007893B1 /* Cosmos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cosmos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5555511DCD1BDC007893B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC5555531DCD1BDC007893B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		AC55556D1DCD1BDC007893B1 /* CosmosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CosmosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5555711DCD1BDC007893B1 /* CosmosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmosUITests.swift; sourceTree = "<group>"; };
 		AC5555731DCD1BDC007893B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFEAB3B40A5C43529915C790 /* Pods-Cosmos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cosmos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cosmos/Pods-Cosmos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B565AB101324501302121FF /* Pods_Cosmos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5723525C83EB3AC688CCA014 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				146EB6932DE4922C6857BF30 /* Pods_Cosmos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC5555451DCD1BDC007893B1 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,8 @@
 				AC5555651DCD1BDC007893B1 /* CosmosTests */,
 				AC5555701DCD1BDC007893B1 /* CosmosUITests */,
 				AC55554F1DCD1BDC007893B1 /* Products */,
+				BE8FCB8BF5CEA9CBB2756B37 /* Pods */,
+				5723525C83EB3AC688CCA014 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +140,15 @@
 			path = CosmosUITests;
 			sourceTree = "<group>";
 		};
+		BE8FCB8BF5CEA9CBB2756B37 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFEAB3B40A5C43529915C790 /* Pods-Cosmos.debug.xcconfig */,
+				4A8832BD52E2C2266BDF1250 /* Pods-Cosmos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC5555761DCD1BDC007893B1 /* Build configuration list for PBXNativeTarget "Cosmos" */;
 			buildPhases = (
+				8229C331BC68765E3AFA1A08 /* [CP] Check Pods Manifest.lock */,
 				AC55554A1DCD1BDC007893B1 /* Sources */,
 				AC55554B1DCD1BDC007893B1 /* Frameworks */,
 				AC55554C1DCD1BDC007893B1 /* Resources */,
+				A967948E446381291346A806 /* [CP] Embed Pods Frameworks */,
+				E3BB51D1C17DF75D1994A0BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8229C331BC68765E3AFA1A08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A967948E446381291346A806 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cosmos/Pods-Cosmos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3BB51D1C17DF75D1994A0BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cosmos/Pods-Cosmos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC55554A1DCD1BDC007893B1 /* Sources */ = {
@@ -413,6 +488,7 @@
 		};
 		AC5555771DCD1BDC007893B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFEAB3B40A5C43529915C790 /* Pods-Cosmos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VAR7436X2W;
@@ -426,6 +502,7 @@
 		};
 		AC5555781DCD1BDC007893B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A8832BD52E2C2266BDF1250 /* Pods-Cosmos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VAR7436X2W;
@@ -514,6 +591,7 @@
 				AC5555781DCD1BDC007893B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC5555791DCD1BDC007893B1 /* Build configuration list for PBXNativeTarget "CosmosTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +600,7 @@
 				AC55557B1DCD1BDC007893B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC55557C1DCD1BDC007893B1 /* Build configuration list for PBXNativeTarget "CosmosUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +609,7 @@
 				AC55557E1DCD1BDC007893B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
